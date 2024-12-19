@@ -1,7 +1,5 @@
-streamlit
 openai
-fpdf2
-jinja2
-markdown2
-pdfkit
-wkhtmltopdf
+langchain
+faiss-cpu
+pypdf
+tiktoken
