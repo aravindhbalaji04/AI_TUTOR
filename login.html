@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduMatrix - Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">EduMatrix</div>
+        <div class="theme-toggle">
+            <label for="themeSwitch">Theme:</label>
+            <select id="themeSwitch">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+            </select>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <!-- Link back to the landing page -->
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="login-container">
+            <h2>Login to EduMatrix</h2>
+            <form id="loginForm">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+
+            <!-- Button for Gmail login -->
+            <button id="gmailLoginBtn">Login with Google</button>
+
+            <!-- Link for forgot password -->
+            <p><a href="forgot-password.html">Forgot Password?</a></p>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <p>&copy; 2024 EduMatrix. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Include the same script for theme toggle -->
+</body>
+
+</html>

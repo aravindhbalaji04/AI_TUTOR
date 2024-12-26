@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard - EduMatrix</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">EduMatrix</div>
+        <div class="teacher-details">
+            <span>Welcome, Teacher Name</span>
+            <!-- Replace with dynamic data -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#upload">Upload Materials</a></li>
+                <li><a href="#assignments">Create Assignments</a></li>
+                <li><a href="#checkAssignments">Check Assignments</a></li>
+                <li><a href="#scheduleTest">Schedule Test</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="notifications">
+            <h2>Notifications</h2>
+            <div class="notification-item">
+                <p>Assignment due date for Class X has ended.</p>
+                <button class="mark-read">Mark as Read</button>
+            </div>
+            <div class="notification-item">
+                <p>You have a class at 10:30 AM for Class Y.</p>
+                <button class="mark-read">Mark as Read</button>
+            </div>
+        </section>
+
+        <section class="dashboard-container">
+            <!-- Class Management Section -->
+            <div class="class-management">
+                <h2>Select Class:</h2>
+                <div class="class-buttons">
+                    <button class="class-btn" data-class="classX">Class X</button>
+                    <button class="class-btn" data-class="classY">Class Y</button>
+                    <button class="class-btn" data-class="classZ">Class Z</button>
+                    <button class="class-btn" data-class="classA">Class A</button>
+                    <button class="class-btn" data-class="classB">Class B</button>
+                </div>
+
+                <!-- Join Class Button -->
+                <button id="joinClassBtn">Join Class Room</button>
+
+            </div>
+            <!-- Timetable Section -->
+            <section class="timetable-container">
+                <h2>Your Weekly Timetable</h2>
+                <table id="timetable" class="timetable">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                        </tr>
+                    </thead>
+                    <tbody id="timetable-body">
+                        <!-- Sample Timetable Rows -->
+                        <tr>
+                            <td>9:00 AM - 10:00 AM</td>
+                            <td>Class A</td>
+                            <td></td>
+                            <!-- Empty for no class -->
+                            <td>Class B</td>
+                            <td></td>
+                            <!-- Empty for no class -->
+                            <td></td>
+                            <!-- Empty for no class -->
+                        </tr>
+                        <tr>
+                            <td>10:00 AM - 11:00 AM</td>
+                            <td></td>
+                            <!-- Empty for no class -->
+                            <td>Class B</td>
+                            <td></td>
+                            <!-- Empty for no class -->
+                            <td>Class C</td>
+                            <td></td>
+                            <!-- Empty for no class -->
+                        </tr>
+                        <tr>
+                            <td>11:00 AM - 12:00 PM</td>
+                            <td></td>
+                            <!-- Empty for no class -->
+                            <td></td>
+                            <!-- Empty for no class -->
+                            <td>Class B</td>
+                            <td></td>
+                            <!-- Empty for no class -->
+                            <td>Class C</td>
+                            <!-- Empty for no class -->
+                        </tr>
+
+                        <!-- Additional rows can be added here for more time slots -->
+                    </tbody>
+                </table>
+
+            </section>
+
+            <!-- Student List and Performance -->
+            <div id="student-info" class="student-info">
+                <!-- Dynamic content will be inserted here -->
+            </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer id="contact">
+        <p>&copy; 2024 EduMatrix. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Include script for interactivity -->
+</body>
+
+</html>

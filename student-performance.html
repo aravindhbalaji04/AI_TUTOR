@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <title>Student Performance - EduMatrix</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Include Chart.js for graphs -->
+</head>
+
+<body>
+    <header>
+        <div class="logo">EduMatrix</div>
+        <div class="student-details">
+            <span>Welcome, Student Name</span>
+            <!-- Replace with dynamic data -->
+        </div>
+    </header>
+
+    <main>
+        <section class="performance-container">
+            <h2>Student Performance Overview</h2>
+
+            <!-- Subject Performance Cards -->
+            <div class="subject-performance">
+                <h3>Mathematics</h3>
+                <canvas id="mathChart" width="1" height="1"></canvas>
+                <!-- Set canvas size -->
+                <p>Assignments Given: 10</p>
+                <p>Submitted Before Deadline: 8</p>
+                <p>Submitted After Deadline: 2</p>
+                <p>Total Marks: 100</p>
+                <p>Marks Received: 85</p>
+                <p>Total Live Classes: 12</p>
+                <p>Classes Attended: 10</p>
+                <p>Performance Rating: 85/100</p>
+            </div>
+
+            <div class="subject-performance">
+                <h3>Physics</h3>
+                <canvas id="physicsChart" width="1" height="1"></canvas>
+                <!-- Set canvas size -->
+                <p>Assignments Given: 8</p>
+                <p>Submitted Before Deadline: 6</p>
+                <p>Submitted After Deadline: 2</p>
+                <p>Total Marks: 100</p>
+                <p>Marks Received: 75</p>
+                <p>Total Live Classes: 10</p>
+                <p>Classes Attended: 9</p>
+                <p>Performance Rating: 75/100</p>
+            </div>
+
+            <!-- Add more subjects as needed -->
+        </section>
+
+    </main>
+
+    <footer id="contact">
+        <p>&copy; 2024 EduMatrix. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Include script for interactivity -->
+    <script>
+        // Chart.js setup for Mathematics performance
+        const ctxMath = document.getElementById('mathChart').getContext('2d');
+        const mathChart = new Chart(ctxMath, {
+            type: 'pie',
+            data: {
+                labels: ['Submitted Before Deadline', 'Submitted After Deadline'],
+                datasets: [{
+                    label: 'Assignments Submission',
+                    data: [8, 2],
+                    backgroundColor: ['#36A2EB', '#FF6384'],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: 'Mathematics Assignment Submission'
+                    }
+                }
+            }
+        });
+
+        // Chart.js setup for Physics performance
+        const ctxPhysics = document.getElementById('physicsChart').getContext('2d');
+        const physicsChart = new Chart(ctxPhysics, {
+            type: 'pie',
+            data: {
+                labels: ['Submitted Before Deadline', 'Submitted After Deadline'],
+                datasets: [{
+                    label: 'Assignments Submission',
+                    data: [6, 2],
+                    backgroundColor: ['#36A2EB', '#FF6384'],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: 'Physics Assignment Submission'
+                    }
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>

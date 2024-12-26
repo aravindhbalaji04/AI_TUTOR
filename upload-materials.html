@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Materials - EduMatrix</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">EduMatrix</div>
+        <div class="teacher-details">
+            <span>Welcome, Teacher Name</span>
+            <!-- Replace with dynamic data -->
+        </div>
+    </header>
+
+    <main>
+        <section class="upload-container">
+            <h2>Upload Materials</h2>
+            <form id="upload-form">
+                <div class="class-selection">
+                    <h3>Select Class:</h3>
+                    <label><input type="checkbox" name="class" value="Class A"> Class A</label><br>
+                    <label><input type="checkbox" name="class" value="Class B"> Class B</label><br>
+                    <label><input type="checkbox" name="class" value="Class C"> Class C</label><br>
+                    <label><input type="checkbox" name="class" value="Class D"> Class D</label><br>
+                </div>
+
+                <div class="file-upload">
+                    <h3>Upload Document:</h3>
+                    <input type="file" id="file-input" accept=".pdf,.doc,.docx,.ppt,.pptx" multiple required>
+                </div>
+
+                <button type="submit">Upload Materials</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer id="contact">
+        <p>&copy; 2024 EduMatrix. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Include script for interactivity -->
+</body>
+
+</html>

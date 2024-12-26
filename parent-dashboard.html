@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent Dashboard - EduMatrix</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">EduMatrix</div>
+        <div class="parent-details">
+            <span>Welcome, Parent Name</span>
+            <!-- Replace with dynamic data -->
+        </div>
+    </header>
+
+    <main>
+        <!-- Notification Section -->
+        <section class="notifications">
+            <h2>Notifications</h2>
+            <div class="notification-item">
+                <p>Report card for your child is available.</p>
+            </div>
+            <div class="notification-item">
+                <p>Your child has missed 2 classes this week.</p>
+            </div>
+            <div class="notification-item">
+                <p>New assignment posted by Mathematics teacher.</p>
+            </div>
+        </section>
+
+        <!-- Subject Reports Section -->
+        <section class="subjects-container">
+            <h2>Subject Reports</h2>
+            <div class="subject-boxes">
+                <div class="subject-box">
+                    <h3>Mathematics</h3>
+                    <p>Assignments Submitted: 5</p>
+                    <p>Test Marks: 85%</p>
+                    <p>Live Classes Attended: 10</p>
+                </div>
+                <div class="subject-box">
+                    <h3>Physics</h3>
+                    <p>Assignments Submitted: 4</p>
+                    <p>Test Marks: 78%</p>
+                    <p>Live Classes Attended: 8</p>
+                </div>
+                <div class="subject-box">
+                    <h3>Chemistry</h3>
+                    <p>Assignments Submitted: 6</p>
+                    <p>Test Marks: 90%</p>
+                    <p>Live Classes Attended: 9</p>
+                </div>
+                <!-- Add more subjects as needed -->
+            </div>
+        </section>
+
+        <!-- Chat Box Section -->
+        <section class="chat-container">
+            <h2>Chat with Teachers</h2>
+            <textarea id="chat-box" placeholder="Type your message here..."></textarea>
+            <button id="send-message">Send Message</button>
+
+            <!-- Display chat history (optional) -->
+            <div id="chat-history">
+                <!-- Sample chat messages -->
+                <p><strong>Teacher:</strong> Please ensure your child completes the homework.</p>
+                <!-- More messages can be appended dynamically -->
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer id="contact">
+        <p>&copy; 2024 EduMatrix. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Include script for interactivity -->
+</body>
+
+</html>

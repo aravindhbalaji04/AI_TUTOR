@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Test - EduMatrix</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">EduMatrix</div>
+        <div class="teacher-details">
+            <span>Welcome, Teacher Name</span>
+            <!-- Replace with dynamic data -->
+        </div>
+    </header>
+
+    <main>
+        <section class="schedule-test-container">
+            <h2>Schedule a Test</h2>
+
+            <p>Select how you would like to create the test:</p>
+            <button id="upload-pdf-btn">Upload PDF with Questions</button>
+            <button id="manual-input-btn">Manually Type Questions</button>
+
+            <!-- Upload PDF Form -->
+            <div id="pdf-form" style="display:none;">
+                <h3>Upload PDF:</h3>
+                <input type="file" id="pdf-input" accept=".pdf" required>
+                <button id="extract-questions-btn">Extract Questions</button>
+            </div>
+
+            <!-- Manual Input Form -->
+            <div id="manual-form" style="display:none;">
+                <h3>Enter Questions Manually:</h3>
+                <textarea id="questions-input" placeholder="Type your questions here..."></textarea><br>
+
+                <!-- Class Selection -->
+                <div class="class-selection">
+                    <h4>Select Class:</h4>
+                    <label><input type="checkbox" name="class" value="Class A"> Class A</label><br>
+                    <label><input type="checkbox" name="class" value="Class B"> Class B</label><br>
+                    <label><input type="checkbox" name="class" value="Class C"> Class C</label><br>
+                    <label><input type="checkbox" name="class" value="Class D"> Class D</label><br>
+                </div>
+
+                <!-- Time Slot Selection -->
+                <label for="time-slot">Select Time Slot:</label>
+                <input type="time" id="time-slot" required>
+
+                <!-- Due Date Input -->
+                <label for="due-date">Due Date:</label>
+                <input type="date" id="due-date" required>
+
+                <!-- Submit Button -->
+                <button id="schedule-test-btn">Schedule Test</button>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer id="contact">
+        <p>&copy; 2024 EduMatrix. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Include script for interactivity -->
+</body>
+
+</html>
